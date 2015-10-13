@@ -1,7 +1,7 @@
-import path from 'path';
-import program from 'commander';
+const path = require('path');
+const program = require('commander');
 
-import render from './lib/render';
+const render = require('./lib/render');
 
 program
   .version('1.0.0')
@@ -11,6 +11,8 @@ program
   .parse(process.argv);
 
 const componentPath = path.resolve(process.cwd(), program.args[0]);
+
+require('babel/register');
 
 const data = {
   Component: require(componentPath),

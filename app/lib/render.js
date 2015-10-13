@@ -1,12 +1,15 @@
-import React from 'react';
-import {
-  renderToStaticMarkup,
-  renderToString,
-} from 'react-dom/server';
+const React = require('react');
+const ReactDOM = require('react-dom/server');
 
-export default function render({Component, props, isStatic = false}) {
+module.exports = function render(options) {
+  const Component = options.Component;
+  const props = options.props;
+  const isStatic = options.isStatic || false;
+
   if (isStatic) {
-    return renderToStaticMarkup(<Component {...props} />);
+    return ReactDOM
+      .renderToStaticMarkup(React.createElement(Component, props));
   }
-  return renderToString(<Component {...props} />);
-}
+  return ReactDOM
+    .renderToString(React.createElement(Component, props));
+};

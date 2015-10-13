@@ -1,6 +1,6 @@
 {
   "name": "react-render-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI app to render React components to strings and output the result on console",
   "main": "./.bin/index.js",
   "directories": {
