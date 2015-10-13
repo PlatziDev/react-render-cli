@@ -1,0 +1,51 @@
+{
+  "name": "react-render-cli",
+  "version": "1.0.0",
+  "description": "CLI app to render React components to strings and output the result on console",
+  "main": "./.bin/index.js",
+  "directories": {
+    "app": "app",
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node ./.bin/index.js",
+    "test": "mocha --compilers js:babel/register test/ --ui bdd --reporter spec -r test/helpers/setup -w -G"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiodxa/react-cli.git"
+  },
+  "keywords": [
+    "react",
+    "cli",
+    "render",
+    "jsx",
+    "es6",
+    "es7"
+  ],
+  "author": "Sergio Daniel Xalambrí <sergio@xalambri.com.ar> (https://sergio.xalambri.com.ar/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergiodxa/react-cli/issues"
+  },
+  "homepage": "https://github.com/sergiodxa/react-cli#readme",
+  "devDependencies": {
+    "babel-eslint": "^4.1.3",
+    "chai": "^3.3.0",
+    "chai-as-promised": "^5.1.0",
+    "eslint": "^1.6.0",
+    "eslint-plugin-react": "^3.5.1",
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "babel": "^5.8.23",
+    "colors": "^1.1.2",
+    "commander": "^2.8.1",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "react-render": ".bin/index.js"
+  }
+}
