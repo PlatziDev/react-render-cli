@@ -1,6 +1,6 @@
 {
   "name": "react-render-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI app to render React components to strings and output the result on console",
   "main": "./.bin/index.js",
   "directories": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sergiodxa/react-cli.git"
+    "url": "git+https://github.com/PlatziDev/react-cli.git"
   },
   "keywords": [
     "react",
@@ -26,9 +26,9 @@
   "author": "Sergio Daniel Xalambrí <sergio@xalambri.com.ar> (https://sergio.xalambri.com.ar/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sergiodxa/react-cli/issues"
+    "url": "https://github.com/PlatziDev/react-cli/issues"
   },
-  "homepage": "https://github.com/sergiodxa/react-cli#readme",
+  "homepage": "https://github.com/PlatziDev/react-cli#readme",
   "devDependencies": {
     "babel-eslint": "^4.1.3",
     "chai": "^3.3.0",
