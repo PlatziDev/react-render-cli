@@ -1,11 +1,11 @@
 # react-render-cli
 [![NPM](https://nodei.co/npm/react-render-cli.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-render-cli/)
 
-[![dependencies](https://david-dm.org/sergiodxa/react-render-cli.png)](https://david-dm.org/sergiodxa/react-render-cli)
+[![dependencies](https://david-dm.org/PlatziDev/react-render-cli.png)](https://david-dm.org/sergiodxa/react-render-cli)
 
 CLI app to render React components to strings and output the result on console.
 
-It support JSX, ES2015/6 & ES2016/7.
+It don't support JSX, ES2015/6 & ES2016/7, you need the send the transpiled file to a Node.js 4.2.1 compatible code.
 
 ## Installation
 ```bash
@@ -44,6 +44,15 @@ react-render MyComponent.jsx -p '{"text":"Hello World"}'
 ```bash
 react-render MyComponent.jsx -p '{"text":"Hello World"}' -s
 ```
+
+## Build binary
+If you need a performance boost you can build a binary application usign the command:
+
+```
+npm run build
+```
+
+This will output a *react-render-cli* file with Node.js incorpored. The binary can run in almost half of the time.
 
 ## Test
 ```bash
