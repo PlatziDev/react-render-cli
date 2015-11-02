@@ -10,6 +10,7 @@ module.exports = function render(options) {
     return ReactDOM
       .renderToStaticMarkup(React.createElement(Component, props));
   }
+
   return ReactDOM
     .renderToString(React.createElement(Component, props));
 };
